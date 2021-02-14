@@ -13,11 +13,11 @@ namespace SimpL
                 if (ExileController.Instance.exiled != null && !ExileController.Instance.exiled.IsImpostor)
                 {
                     // alternative solution
-                    //var imposter = PlayerControl.AllPlayerControls.ToArray().FirstOrDefault(x => x.Data.IsImpostor);
+                    //var impostor = PlayerControl.AllPlayerControls.ToArray().FirstOrDefault(x => x.Data.IsImpostor);
                     //var crew = PlayerControl.AllPlayerControls.ToArray().Where(x => !x.Data.IsImpostor).ToArray();
                     //foreach (var player in crew)
                     //{
-                    //    imposter.MurderPlayer(player);
+                    //    impostor.MurderPlayer(player);
                     //}
 
                     ShipStatus.RpcEndGame(GameOverReason.ImpostorBySabotage, !SaveManager.BoughtNoAds);
