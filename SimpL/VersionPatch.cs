@@ -8,7 +8,7 @@ namespace SimpL
     {
         static void Postfix(VersionShower __instance)
         {
-            __instance.text.Text = "Among Us SimpL Mod";
+            __instance.text.text = "Among Us SimpL Mod";
         }
     }
 
@@ -17,7 +17,7 @@ namespace SimpL
     {
         public static void Postfix(PingTracker __instance)
         {
-            __instance.text.Text += "\nAmong Us SimpL Mod";
+            __instance.text.text += "\nAmong Us SimpL Mod";
         }
     }
 }

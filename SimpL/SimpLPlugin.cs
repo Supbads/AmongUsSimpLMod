@@ -24,7 +24,9 @@ namespace SimpL
 
         public override void Load()
         {
+            System.Console.WriteLine("before bundle");
             SimplBundle.LoadBundle();
+            System.Console.WriteLine("loaded bundle");
 
             this.harmony.PatchAll();
         }
